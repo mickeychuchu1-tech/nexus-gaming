@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexus GG - Gaming Platform</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <!-- Logo -->
+            <div class="logo">
+                <i class="fas fa-bolt"></i>
+                <span>NEXUS GG</span>
+            </div>
+
+            <!-- Menu Toggle for Mobile -->
+            <div class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <!-- Navigation Menu -->
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#games">Games</a></li>
+                <li><a href="#tournaments">Tournaments</a></li>
+                <li><a href="#leaderboard">Leaderboard</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#store">Store</a></li>
+                <li><a href="#community">Community</a></li>
+            </ul>
+
+            <!-- Right Section -->
+            <div class="nav-right">
+                <button class="search-btn">
+                    <i class="fas fa-search"></i>
+                </button>
+                <button class="notification-btn">
+                    <i class="fas fa-bell"></i>
+                    <span class="notification-badge">1</span>
+                </button>
+                <button class="join-btn">
+                    <i class="fas fa-user-plus"></i>
+                    JOIN NOW
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-background"></div>
+        
+        <div class="hero-content">
+            <!-- Badge -->
+            <div class="season-badge">
+                <span class="badge-dot"></span>
+                SEASON 12 NOW LIVE
+            </div>
+
+            <!-- Main Heading -->
+            <h1 class="hero-title">
+                Level Up Your <span class="gradient-text">Gaming</span> Experience
+            </h1>
+
+            <!-- Description -->
+            <p class="hero-description">
+                The world's premier esports platform. Compete in elite tournaments, climb global leaderboards, and connect with millions of elite gamers across every genre.
+            </p>
+
+            <!-- Buttons -->
+            <div class="hero-buttons">
+                <button class="btn btn-primary">
+                    <i class="fas fa-play"></i>
+                    JOIN NOW
+                </button>
+                <button class="btn btn-secondary">
+                    <i class="fas fa-play"></i>
+                    EXPLORE TOURNAMENTS
+                </button>
+            </div>
+        </div>
+
+        <!-- Stats Section -->
+        <div class="stats-section">
+            <div class="stat">
+                <div class="stat-icon">
+                    <i class="fas fa-users"></i>
+                </div>
+                <div class="stat-content">
+                    <h3>2.4M+</h3>
+                    <p>Active Players</p>
+                </div>
+            </div>
+            <div class="stat">
+                <div class="stat-icon">
+                    <i class="fas fa-trophy"></i>
+                </div>
+                <div class="stat-content">
+                    <h3>$9.5M</h3>
+                    <p>Prize Pools</p>
+                </div>
+            </div>
+            <div class="stat">
+                <div class="stat-icon">
+                    <i class="fas fa-gamepad"></i>
+                </div>
+                <div class="stat-content">
+                    <h3>1,200+</h3>
+                    <p>Tournaments</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Games Section -->
+    <section class="featured-games" id="games">
+        <div class="section-container">
+            <!-- Section Header -->
+            <div class="section-header">
+                <div class="section-label">
+                    <span class="label-line"></span>
+                    <span class="label-text">FEATURED GAMES</span>
+                </div>
+                <h2 class="section-title">
+                    Choose Your <span class="gradient-text">Battlefield</span>
+                </h2>
+            </div>
+
+            <!-- Filter Buttons -->
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="fps">FPS</button>
+                <button class="filter-btn" data-filter="rpg">RPG</button>
+                <button class="filter-btn" data-filter="battle-royale">Battle Royale</button>
+                <button class="filter-btn" data-filter="racing">Racing</button>
+                <button class="filter-btn" data-filter="strategy">Strategy</button>
+            </div>
+
+            <!-- Games Grid -->
+            <div class="games-grid">
+                <!-- Game Card 1 -->
+                <div class="game-card" data-category="battle-royale">
+                    <div class="game-image">
+                        <img src="https://images.pexels.com/photos/8386434/pexels-photo-8386434.jpeg?auto=compress&cs=tinysrgb&w=400&h=500" alt="Apex Legends">
+                        <div class="game-badges">
+                            <span class="status-badge trending">TRENDING</span>
+                            <span class="genre-badge">Battle Royale</span>
+                        </div>
+                    </div>
+                    <div class="game-info">
+                        <h3>Apex Legends</h3>
+                        <div class="game-stats">
+                            <span class="players"><i class="fas fa-users"></i> 128M players</span>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.8</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Game Card 2 -->
+                <div class="game-card" data-category="fps">
+                    <div class="game-image">
+                        <img src="https://images.pexels.com/photos/8386433/pexels-photo-8386433.jpeg?auto=compress&cs=tinysrgb&w=400&h=500" alt="Valorant">
+                        <div class="game-badges">
+                            <span class="status-badge hot">HOT</span>
+                            <span class="genre-badge">FPS</span>
+                        </div>
+                    </div>
+                    <div class="game-info">
+                        <h3>Valorant</h3>
+                        <div class="game-stats">
+                            <span class="players"><i class="fas fa-users"></i> 22M players</span>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.9</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Game Card 3 -->
+                <div class="game-card" data-category="strategy">
+                    <div class="game-image">
+                        <img src="https://images.pexels.com/photos/11014201/pexels-photo-11014201.jpeg?auto=compress&cs=tinysrgb&w=400&h=500" alt="League of Legends">
+                        <div class="game-badges">
+                            <span class="status-badge popular">POPULAR</span>
+                            <span class="genre-badge">Strategy</span>
+                        </div>
+                    </div>
+                    <div class="game-info">
+                        <h3>League of Legends</h3>
+                        <div class="game-stats">
+                            <span class="players"><i class="fas fa-users"></i> 150M players</span>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.7</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Game Card 4 -->
+                <div class="game-card" data-category="rpg">
+                    <div class="game-image">
+                        <img src="https://images.pexels.com/photos/7974881/pexels-photo-7974881.jpeg?auto=compress&cs=tinysrgb&w=400&h=500" alt="Elden Ring">
+                        <div class="game-badges">
+                            <span class="status-badge new">NEW</span>
+                            <span class="genre-badge">RPG</span>
+                        </div>
+                    </div>
+                    <div class="game-info">
+                        <h3>Elden Ring</h3>
+                        <div class="game-stats">
+                            <span class="players"><i class="fas fa-users"></i> 15M players</span>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.9</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Game Card 5 -->
+                <div class="game-card" data-category="battle-royale">
+                    <div class="game-image">
+                        <img src="https://images.pexels.com/photos/9194261/pexels-photo-9194261.jpeg?auto=compress&cs=tinysrgb&w=400&h=500" alt="Fortnite">
+                        <div class="game-badges">
+                            <span class="status-badge live">LIVE</span>
+                            <span class="genre-badge">Battle Royale</span>
+                        </div>
+                    </div>
+                    <div class="game-info">
+                        <h3>Fortnite</h3>
+                        <div class="game-stats">
+                            <span class="players"><i class="fas fa-users"></i> 350M players</span>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.6</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Game Card 6 -->
+                <div class="game-card" data-category="racing">
+                    <div class="game-image">
+                        <img src="https://images.pexels.com/photos/7031413/pexels-photo-7031413.jpeg?auto=compress&cs=tinysrgb&w=400&h=500" alt="Gran Turismo 7">
+                        <div class="game-badges">
+                            <span class="status-badge live">LIVE</span>
+                            <span class="genre-badge">Racing</span>
+                        </div>
+                    </div>
+                    <div class="game-info">
+                        <h3>Gran Turismo 7</h3>
+                        <div class="game-stats">
+                            <span class="players"><i class="fas fa-users"></i> 8M players</span>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.7</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- View All Button -->
+            <div class="view-all-container">
+                <button class="view-all-btn">
+                    VIEW ALL GAMES
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Live Tournaments Section -->
+    <section class="live-tournaments" id="tournaments">
+        <div class="section-container">
+            <!-- Section Header -->
+            <div class="section-header">
+                <div class="section-label tournaments-label">
+                    <span class="label-dot"></span>
+                    <span class="label-text">LIVE TOURNAMENTS</span>
+                </div>
+                <h2 class="section-title">
+                    Explosive <span class="gradient-text">Esports</span> Action
+                </h2>
+            </div>
+
+            <!-- Tournaments Grid -->
+            <div class="tournaments-grid">
+                <!-- Tournament Card 1 -->
+                <div class="tournament-card">
+                    <div class="tournament-image">
+                        <img src="https://cdn.pexels.com/photos/3394659/pexels-photo-3394659.jpeg?auto=compress&cs=tinysrgb&w=500&h=300&dpr=1" alt="Championship Finals">
+                        <div class="tournament-status">
+                            <span class="status-live">
+                                <span class="live-dot"></span>
+                                LIVE NOW
+                            </span>
+                        </div>
+                    </div>
+                    <div class="tournament-info">
+                        <div class="tournament-meta">
+                            <span class="tournament-tag">Championship</span>
+                            <span class="tournament-date">Today - 8 PM</span>
+                        </div>
+                        <h3>Global FPS Championship</h3>
+                        <p class="tournament-description">Elite competitors battle for glory and $500K prize pool</p>
+                        <div class="tournament-stats">
+                            <div class="stat-item">
+                                <i class="fas fa-users"></i>
+                                <span>256 Players</span>
+                            </div>
+                            <div class="stat-item">
+                                <i class="fas fa-trophy"></i>
+                                <span>$500K Prize</span>
+                            </div>
+                            <div class="stat-item">
+                                <i class="fas fa-eye"></i>
+                                <span>45.2K Viewers</span>
+                            </div>
+                        </div>
+                        <button class="tournament-btn">WATCH NOW</button>
+                    </div>
+                </div>
+
+                <!-- Tournament Card 2 -->
+                <div class="tournament-card">
+                    <div class="tournament-image">
+                        <img src="https://cdn.pexels.com/photos/3945683/pexels-photo-3945683.jpeg?auto=compress&cs=tinysrgb&w=500&h=300&dpr=1" alt="Strategy Tournament">
+                        <div class="tournament-status">
+                            <span class="status-upcoming">
+                                <i class="fas fa-clock"></i>
+                                IN 2 HOURS
+                            </span>
+                        </div>
+                    </div>
+                    <div class="tournament-info">
+                        <div class="tournament-meta">
+                            <span class="tournament-tag">Strategy</span>
+                            <span class="tournament-date">Today - 6 PM</span>
+                        </div>
+                        <h3>Strategic Masterminds League</h3>
+                        <p class="tournament-description">Top strategists showcase their tactical brilliance</p>
+                        <div class="tournament-stats">
+                            <div class="stat-item">
+                                <i class="fas fa-users"></i>
+                                <span>128 Players</span>
+                            </div>
+                            <div class="stat-item">
+                                <i class="fas fa-trophy"></i>
+                                <span>$250K Prize</span>
+                            </div>
+                            <div class="stat-item">
+                                <i class="fas fa-eye"></i>
+                                <span>23.8K Viewers</span>
+                            </div>
+                        </div>
+                        <button class="tournament-btn">NOTIFY ME</button>
+                    </div>
+                </div>
+
+                <!-- Tournament Card 3 -->
+                <div class="tournament-card">
+                    <div class="tournament-image">
+                        <img src="https://cdn.pexels.com/photos/3408356/pexels-photo-3408356.jpeg?auto=compress&cs=tinysrgb&w=500&h=300&dpr=1" alt="Battle Royale Event">
+                        <div class="tournament-status">
+                            <span class="status-live">
+                                <span class="live-dot"></span>
+                                LIVE NOW
+                            </span>
+                        </div>
+                    </div>
+                    <div class="tournament-info">
+                        <div class="tournament-meta">
+                            <span class="tournament-tag">Battle Royale</span>
+                            <span class="tournament-date">Today - 7 PM</span>
+                        </div>
+                        <h3>Battle Royale Grand Slam</h3>
+                        <p class="tournament-description">Intense battles on multiple maps with live commentary</p>
+                        <div class="tournament-stats">
+                            <div class="stat-item">
+                                <i class="fas fa-users"></i>
+                                <span>512 Players</span>
+                            </div>
+                            <div class="stat-item">
+                                <i class="fas fa-trophy"></i>
+                                <span>$750K Prize</span>
+                            </div>
+                            <div class="stat-item">
+                                <i class="fas fa-eye"></i>
+                                <span>128.5K Viewers</span>
+                            </div>
+                        </div>
+                        <button class="tournament-btn">WATCH NOW</button>
+                    </div>
+                </div>
+
+                <!-- Tournament Card 4 -->
+                <div class="tournament-card">
+                    <div class="tournament-image">
+                        <img src="https://cdn.pexels.com/photos-resize/3587620/pexels-photo-3587620.jpeg?auto=compress&cs=tinysrgb&w=500&h=300&dpr=1" alt="Esports League">
+                        <div class="tournament-status">
+                            <span class="status-upcoming">
+                                <i class="fas fa-calendar"></i>
+                                TOMORROW
+                            </span>
+                        </div>
+                    </div>
+                    <div class="tournament-info">
+                        <div class="tournament-meta">
+                            <span class="tournament-tag">League</span>
+                            <span class="tournament-date">Tomorrow - 5 PM</span>
+                        </div>
+                        <h3>International Esports League</h3>
+                        <p class="tournament-description">Teams compete across multiple game titles</p>
+                        <div class="tournament-stats">
+                            <div class="stat-item">
+                                <i class="fas fa-users"></i>
+                                <span>64 Teams</span>
+                            </div>
+                            <div class="stat-item">
+                                <i class="fas fa-trophy"></i>
+                                <span>$1M Prize</span>
+                            </div>
+                            <div class="stat-item">
+                                <i class="fas fa-eye"></i>
+                                <span>TBA</span>
+                            </div>
+                        </div>
+                        <button class="tournament-btn">REGISTER NOW</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="index.js"></script>
+</body>
+</html>
